@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Check Out</title>
+</head>
+<body>
+    <header class="header-printer">
+        <h1>3D Printer Kit</h1>
+    </header>
+
+    <section class="section-title">
+        <h2>Product Details</h2>
+        <img src="img/3dprinter.jpeg" alt="Printer 3D">
+        <p>
+            Our 3D Printer Kit includes everything you need to assemble your
+             own 3D printer at home. Comes with a detailed guide and online support.
+              Unleash your creativity and dive into the world of 3D printing!
+        </p>
+
+        <p>
+            Price: $299.99
+        </p>
+    </section>
+
+    <form class="orderForm">
+        <h2>Order Form</h2>
+
+        <label for="qunatity">Quantity Ordered:</label>
+        <select id="qunatity" name="quantity">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name">
+
+        <label for="email">Email Address:</label>
+        <input type="email" name="email" id="email">
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" name="phone" id="phone">
+
+        <label for="shipping">Shipping Method:</label>
+        <div>
+            <input type="radio" name="btn" id="btn" checked>
+            <label for="overnight">Overnight ($19.99)</label>
+        </div>
+        <div>
+            <input type="radio" name="btn" id="btn">
+            <label for="budget">Budget (Free)</label>
+        </div>
+        <div>
+            <input type="radio" name="btn" id="btn" required>
+            <label for="2day">2 Day ($9.99)</label>
+        </div>
+
+        <h2>Billing Address:</h2>
+
+        <label for="address">Street Address:</label>
+        <input type="text">
+
+        <label for="city">City:</label>
+        <input type="text">
+
+        <label for="state">State</label>
+        <select id="state" name="state" required>
+            <option value="select">Please select</option>
+            <option value="alabama">Alabama</option>
+            <option value="alaska">Alaska</option>
+            <option value="arizona">Arizona</option>
+            <option value="arkansas">Arkansas</option>
+            <option value="california">California</option>
+            <option value="colorado">Colorado</option>
+            <option value="connecticut">Connecticut</option>
+            <option value="delaware">Delaware</option>
+            <option value="florida">Florida</option>
+            <option value="georgia">Georgia</option>
+            <option value="hawaii">Hawaii</option>
+            <option value="idaho">Idaho</option>
+          </select>
+
+          <label for="zip">Zip Code</label>
+          <input type="text" name="zipcode" id="zipcode">
+
+          <h2>Shipping Address (if different)</h2>
+            <div class="billing-address">
+          <label for="billing">Same as Billing Address</label>
+          <input type="checkbox" name="checkbox" id="checkbox">
+        </div>
+
+        
+        <label for="baddress">Street Address:</label>
+        <input type="text">
+
+        <label for="bcity">City:</label>
+        <input type="text">
+
+        <label for="bstate">State</label>
+        <select id="bstate" name="state" required>
+            <option value="select">Please select</option>
+            <option value="alabama">Alabama</option>
+            <option value="alaska">Alaska</option>
+            <option value="arizona">Arizona</option>
+            <option value="arkansas">Arkansas</option>
+            <option value="california">California</option>
+            <option value="colorado">Colorado</option>
+            <option value="connecticut">Connecticut</option>
+            <option value="delaware">Delaware</option>
+            <option value="florida">Florida</option>
+            <option value="georgia">Georgia</option>
+            <option value="hawaii">Hawaii</option>
+            <option value="idaho">Idaho</option>
+          </select>
+
+          <label for="bzip">Zip Code</label>
+          <input type="text" name="zipcode" id="zipcode">
+
+          <h2>Methode of Payment:</h2>
+
+<div>
+  <input type="radio" name="payment-method" id="paypal" required>
+  <label for="paypal">PayPal</label>
+</div>
+
+<div>
+  <input type="radio" name="payment-method" id="credit-card" required>
+  <label for="credit-card">Credit Card</label>
+</div>
+
+<div id="credit-card-fields" style="display: none;">
+  <!-- Add your credit card input fields here -->
+  Credit Card Fields:
+  <input type="text" placeholder="Credit Card Number">
+  <input type="text" placeholder="Expiry Date">
+  <input type="text" placeholder="CVV">
+</div>
+
+<div id="paypal-fields" style="display: none;">
+  <!-- Add your PayPal input fields here -->
+  PayPal Fields:
+  <input type="text" placeholder="PayPal Email">
+</div>
+
+<input type="submit" value="Place Order" class="btn-order">
+        </form>
+    
+    <script src="app.js"></script>
+</body>
+</html>
